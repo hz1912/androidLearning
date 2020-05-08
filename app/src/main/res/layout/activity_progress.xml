@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.example.myapplication.ProgressActivity">
+
+    <ProgressBar
+        android:id="@+id/pb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ProgressBar>
+
+
+    <ProgressBar
+        android:id="@+id/pb2"
+        style="@android:style/Widget.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+    </ProgressBar>
+
+    <ProgressBar
+        android:id="@+id/pb3"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:max="100"
+        android:secondaryProgress="30"></ProgressBar>
+
+    <ProgressBar
+        android:id="@+id/pb4"
+        style="@android:style/Widget.Material.ProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"></ProgressBar>
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="模拟进度"></Button>
+
+    <ProgressBar
+        android:id="@+id/pb6"
+        style="@style/MyProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+
+    <Button
+        android:id="@+id/btn_progressdialog1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="progressdialog"
+        android:textAllCaps="false">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btn_progressdialog2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="progressdialog2"
+        android:textAllCaps="false"></Button>
+
+
+
+</LinearLayout>

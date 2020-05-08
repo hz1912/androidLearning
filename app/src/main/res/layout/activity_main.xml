@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="textView"
+            ></Button>
+
+
+
+        <Button
+            android:id="@+id/btn_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            ></Button>
+
+        <Button
+            android:id="@+id/btn_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EditTextView"
+            ></Button>
+
+
+        <Button
+            android:id="@+id/btn_radiobutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RadioButton"
+            ></Button>
+
+
+        <Button
+            android:id="@+id/btn_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="checkbox"
+            ></Button>
+
+
+        <Button
+            android:id="@+id/btn_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="imageview"
+            ></Button>
+
+
+        <Button
+            android:id="@+id/btn_recyclearview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="recycleview"
+            ></Button>
+
+        <Button
+            android:id="@+id/btn_webview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="webview"
+            ></Button>
+
+        <Button
+            android:id="@+id/btn_toast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="toast"
+            ></Button>
+
+        <Button
+            android:id="@+id/btn_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="dialog"
+            ></Button>
+
+        <Button
+            android:id="@+id/btn_progressdialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="progressdialog"
+            ></Button>
+
+        <Button
+            android:id="@+id/btn_customdialog_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="customdialog"
+            ></Button>
+
+
+        <Button
+            android:id="@+id/btn_popupwindow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="popupwindow"
+            ></Button>
+
+        <Button
+            android:id="@+id/btn_jump"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="跳转以及数据传递"
+            ></Button>
+
+        <Button
+            android:id="@+id/btn_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="fragment"
+            ></Button>
+    </LinearLayout>
+
+</ScrollView>
