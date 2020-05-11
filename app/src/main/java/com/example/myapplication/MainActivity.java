@@ -10,9 +10,11 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.myapplication.animation.AnimationActivity;
+import com.example.myapplication.customerviewpager.CustomerViewPagerActivity;
 import com.example.myapplication.fragment.ContainerActivity;
 import com.example.myapplication.jump.AActivity;
 import com.example.myapplication.recycleView.RecycleViewActivity;
+import com.example.myapplication.viewpager.ViewPagerActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -48,6 +50,10 @@ public class MainActivity extends AppCompatActivity {
 
     private Button animation;
 
+    private Button viewPager;
+
+    private Button customerviewPager;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,6 +75,8 @@ public class MainActivity extends AppCompatActivity {
         mJumpl = findViewById(R.id.btn_jump);
         fragment = findViewById(R.id.btn_fragment);
         animation = findViewById(R.id.btn_animation);
+        viewPager = findViewById(R.id.btn_viewpager);
+        customerviewPager = findViewById(R.id.btn_cunstomer_viewpager);
         setListeners();
     }
 
@@ -90,6 +98,8 @@ public class MainActivity extends AppCompatActivity {
         mJumpl.setOnClickListener(onClick);
         fragment.setOnClickListener(onClick);
         animation.setOnClickListener(onClick);
+        viewPager.setOnClickListener(onClick);
+        customerviewPager.setOnClickListener(onClick);
     }
 
     private class onClick implements View.OnClickListener {
@@ -144,10 +154,16 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.btn_fragment:
                     intent = new Intent(MainActivity.this, ContainerActivity.class);
                     break;
-
                 case R.id.btn_animation:
                     intent = new Intent(MainActivity.this, AnimationActivity.class);
                     break;
+                case R.id.btn_viewpager:
+                    intent = new Intent(MainActivity.this, ViewPagerActivity.class);
+                    break;
+                case R.id.btn_cunstomer_viewpager:
+                    intent = new Intent(MainActivity.this, CustomerViewPagerActivity .class);
+                    break;
+
             }
             startActivity(intent);
         }

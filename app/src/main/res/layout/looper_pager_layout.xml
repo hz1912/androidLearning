@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical">
+
+    <com.example.myapplication.customerviewpager.MyViewPager
+        android:id="@+id/looper_pager_vp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></com.example.myapplication.customerviewpager.MyViewPager>
+
+    <TextView
+        android:id="@+id/looper_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#66ffffff"
+        android:padding="10dp"
+        android:paddingLeft="2dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="2dp"
+        android:text="我是标题"
+        android:textAlignment="center"></TextView>
+
+    <LinearLayout
+        android:id="@+id/looper_point_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+<!--        <View-->
+<!--            android:layout_width="5dp"-->
+<!--            android:layout_height="5dp"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:layout_marginRight="5dp"-->
+<!--            android:background="#ffffff"></View>-->
+
+<!--        <View-->
+<!--            android:layout_width="5dp"-->
+<!--            android:layout_height="5dp"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:layout_marginRight="5dp"-->
+<!--            android:background="#ffffff"></View>-->
+
+<!--        <View-->
+<!--            android:layout_width="5dp"-->
+<!--            android:layout_height="5dp"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:layout_marginRight="5dp"-->
+<!--            android:background="#ffffff"></View>-->
+
+<!--        <View-->
+<!--            android:layout_width="5dp"-->
+<!--            android:layout_height="5dp"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:layout_marginRight="5dp"-->
+<!--            android:background="#ffffff"></View>-->
+
+    </LinearLayout>
+
+</RelativeLayout>
