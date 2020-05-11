@@ -22,7 +22,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        <activity android:name=".customerview.TextViewActivity"></activity>
+        <activity android:name=".animation.AnimationActivity"></activity>
+        <activity android:name=".customerview.TextViewActivity" />
         <activity android:name=".customerview.CustomerViewActivity" />
         <activity android:name=".datastorage.SharedPerferencesActivity" />
         <activity android:name=".datastorage.DataStorageActivity" />

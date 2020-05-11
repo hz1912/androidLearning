@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -12,113 +13,103 @@
             android:id="@+id/btn_textview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="textView"
-            ></Button>
-
+            android:text="textView"></Button>
 
 
         <Button
             android:id="@+id/btn_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button"
-            ></Button>
+            android:text="Button"></Button>
 
         <Button
             android:id="@+id/btn_editText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="EditTextView"
-            ></Button>
+            android:text="EditTextView"></Button>
 
 
         <Button
             android:id="@+id/btn_radiobutton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
-            ></Button>
+            android:text="RadioButton"></Button>
 
 
         <Button
             android:id="@+id/btn_checkbox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="checkbox"
-            ></Button>
+            android:text="checkbox"></Button>
 
 
         <Button
             android:id="@+id/btn_imageview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="imageview"
-            ></Button>
+            android:text="imageview"></Button>
 
 
         <Button
             android:id="@+id/btn_recyclearview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="recycleview"
-            ></Button>
+            android:text="recycleview"></Button>
 
         <Button
             android:id="@+id/btn_webview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="webview"
-            ></Button>
+            android:text="webview"></Button>
 
         <Button
             android:id="@+id/btn_toast"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="toast"
-            ></Button>
+            android:text="toast"></Button>
 
         <Button
             android:id="@+id/btn_dialog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="dialog"
-            ></Button>
+            android:text="dialog"></Button>
 
         <Button
             android:id="@+id/btn_progressdialog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="progressdialog"
-            ></Button>
+            android:text="progressdialog"></Button>
 
         <Button
             android:id="@+id/btn_customdialog_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="customdialog"
-            ></Button>
+            android:text="customdialog"></Button>
 
 
         <Button
             android:id="@+id/btn_popupwindow"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="popupwindow"
-            ></Button>
+            android:text="popupwindow"></Button>
 
         <Button
             android:id="@+id/btn_jump"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="跳转以及数据传递"
-            ></Button>
+            android:text="跳转以及数据传递"></Button>
 
         <Button
             android:id="@+id/btn_fragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="fragment"
-            ></Button>
+            android:text="fragment"></Button>
+
+        <Button
+            android:id="@+id/btn_animation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="animation"></Button>
     </LinearLayout>
 
 </ScrollView>

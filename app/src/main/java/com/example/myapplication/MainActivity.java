@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.myapplication.animation.AnimationActivity;
 import com.example.myapplication.fragment.ContainerActivity;
 import com.example.myapplication.jump.AActivity;
 import com.example.myapplication.recycleView.RecycleViewActivity;
@@ -45,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
 
     private Button fragment;
 
+    private Button animation;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
         mPopupWindow = findViewById(R.id.btn_popupwindow);
         mJumpl = findViewById(R.id.btn_jump);
         fragment = findViewById(R.id.btn_fragment);
+        animation = findViewById(R.id.btn_animation);
         setListeners();
     }
 
@@ -85,6 +89,7 @@ public class MainActivity extends AppCompatActivity {
         mPopupWindow.setOnClickListener(onClick);
         mJumpl.setOnClickListener(onClick);
         fragment.setOnClickListener(onClick);
+        animation.setOnClickListener(onClick);
     }
 
     private class onClick implements View.OnClickListener {
@@ -138,6 +143,10 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_fragment:
                     intent = new Intent(MainActivity.this, ContainerActivity.class);
+                    break;
+
+                case R.id.btn_animation:
+                    intent = new Intent(MainActivity.this, AnimationActivity.class);
                     break;
             }
             startActivity(intent);
