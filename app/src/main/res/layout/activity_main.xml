@@ -116,12 +116,6 @@
             android:layout_height="wrap_content"
             android:textAllCaps="false"
             android:text="ViewPager(基本用法)"></Button>
-
-        <Button
-            android:id="@+id/btn_cunstomer_viewpager"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="自定义(ViewPager)"></Button>
     </LinearLayout>
 
 </ScrollView>
