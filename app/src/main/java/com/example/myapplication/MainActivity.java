@@ -13,6 +13,7 @@ import com.example.myapplication.animation.AnimationActivity;
 import com.example.myapplication.customerviewpager.CustomerViewPagerActivity;
 import com.example.myapplication.fragment.ContainerActivity;
 import com.example.myapplication.jump.AActivity;
+import com.example.myapplication.listView.ListViewActivity;
 import com.example.myapplication.recycleView.RecycleViewActivity;
 import com.example.myapplication.viewpager.ViewPageActivity;
 import com.example.myapplication.viewpager.ViewPagerActivity;
@@ -53,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
 
     private Button viewPager;
 
+    private Button listView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
         fragment = findViewById(R.id.btn_fragment);
         animation = findViewById(R.id.btn_animation);
         viewPager = findViewById(R.id.btn_viewpager);
-
+        listView = findViewById(R.id.btn_listview);
         setListeners();
     }
 
@@ -98,6 +101,7 @@ public class MainActivity extends AppCompatActivity {
         fragment.setOnClickListener(onClick);
         animation.setOnClickListener(onClick);
         viewPager.setOnClickListener(onClick);
+        listView.setOnClickListener(onClick);
 
     }
 
@@ -158,6 +162,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_viewpager:
                     intent = new Intent(MainActivity.this, ViewPageActivity.class);
+                    break;
+                case R.id.btn_listview:
+                    intent = new Intent(MainActivity.this, ListViewActivity.class);
                     break;
             }
             startActivity(intent);

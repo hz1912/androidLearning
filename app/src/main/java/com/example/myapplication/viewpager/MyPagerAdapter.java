@@ -20,7 +20,7 @@ public class MyPagerAdapter extends PagerAdapter {
     }
 
     @Override
-    public int getCount(){
+    public int getCount() {
         return Integer.MAX_VALUE;
     }
 
@@ -35,9 +35,9 @@ public class MyPagerAdapter extends PagerAdapter {
     public Object instantiateItem(@NonNull ViewGroup container, int position) {
         View item = LayoutInflater.from(container.getContext()).inflate(R.layout.view_pager, container, false);
         ImageView imageView = item.findViewById(R.id.cover);
-        int pre = position%list.size();
+        int pre = position % list.size();
         imageView.setImageResource(list.get(pre));
-        if(imageView.getParent() instanceof ViewGroup ){
+        if (imageView.getParent() instanceof ViewGroup) {
             ((ViewGroup) imageView.getParent()).removeView(imageView);
         }
         container.addView(imageView);

@@ -1,4 +1,34 @@
 <resources>
     <string name="app_name">学习</string>
     <string name="tv_test1">天哥在奔跑</string>
+
+    <string-array name="phone_name">
+        <item>胡歌</item>
+        <item>白冰</item>
+        <item>白百合</item>
+        <item>迪丽热巴</item>
+        <item>邓家佳</item>
+        <item>黄圣依</item>
+        <item>何穂</item>
+        <item>何曼婷</item>
+        <item>景甜</item>
+        <item>吉克隽逸</item>
+        <item>昆凌</item>
+        <item>李冰冰</item>
+        <item>刘诗诗</item>
+        <item>刘雯</item>
+        <item>那英</item>
+        <item>倪妮</item>
+        <item>宁静</item>
+        <item>欧阳娜娜</item>
+        <item>秦岚</item>
+        <item>戚薇</item>
+        <item>秦岚</item>
+        <item>邱淑贞</item>
+        <item>舒琪</item>
+        <item>宋佳</item>
+        <item>王艳</item>
+        <item>许玮蜜</item>
+        <item>杨颖</item>
+    </string-array>
 </resources>

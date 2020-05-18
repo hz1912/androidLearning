@@ -22,7 +22,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        <activity android:name=".viewpager.ViewPageActivity"></activity>
+        <activity android:name=".listView.phonebook.PhoneBookActivity"></activity>
+        <activity android:name=".listView.ListViewActivity" />
+        <activity android:name=".viewpager.viewltablayout.ViewPagerTabLayoutActivity" />
+        <activity android:name=".viewpager.ViewPageActivity" />
         <activity android:name=".customerviewpager.CustomerViewPagerActivity" />
         <activity android:name=".viewpager.ViewPagerActivity" />
         <activity android:name=".animation.AnimationActivity" />

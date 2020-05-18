@@ -28,7 +28,9 @@ public class LinearAdapter extends RecyclerView.Adapter<LinearAdapter.LinearView
     @NonNull
     @Override
     public LinearAdapter.LinearViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new LinearViewHolder(LayoutInflater.from(mContext).inflate(R.layout.layout_linear_item, parent, false));
+        LayoutInflater layoutInflater = LayoutInflater.from(mContext);
+        View View = layoutInflater.inflate(R.layout.layout_linear_item, parent, false);
+        return new LinearViewHolder(View);
     }
 
     @Override
@@ -53,7 +55,6 @@ public class LinearAdapter extends RecyclerView.Adapter<LinearAdapter.LinearView
     class LinearViewHolder extends RecyclerView.ViewHolder {
         private TextView textView;
         private ImageView imageView;
-
         public LinearViewHolder(@NonNull View itemView) {
             super(itemView);
             textView = itemView.findViewById(R.id.tv_title);

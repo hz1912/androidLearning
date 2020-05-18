@@ -110,12 +110,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="animation"></Button>
+
         <Button
             android:id="@+id/btn_viewpager"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAllCaps="false"
-            android:text="ViewPager(基本用法)"></Button>
+            android:text="ViewPager(基本用法)"
+            android:textAllCaps="false"></Button>
+
+        <Button
+            android:id="@+id/btn_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ListView(基本用法)"
+            android:textAllCaps="false"></Button>
+
+
     </LinearLayout>
 
 </ScrollView>

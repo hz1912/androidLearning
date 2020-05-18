@@ -9,6 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -31,11 +33,6 @@ public class AFragment extends Fragment {
 
     private Button mBtnMessage;
 
-
-
-
-
-
     public static AFragment newInstance(String title) {
         AFragment aFragment = new AFragment();
         Bundle bundle = new Bundle();
@@ -47,8 +44,14 @@ public class AFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        if(container instanceof LinearLayout){
+            Log.d("container", "container->LinearLayout");
+        }else if(container instanceof FrameLayout  ){
+            Log.d("container", "container->FrameLayout");
+        }
         View view = inflater.inflate(R.layout.fragment_a, container, false);
-        Log.d("AFragment","-------onCreateView----------");
+        Log.d("view", "container->LinearOut");
+        Log.d("AFragment", "-------onCreateView----------");
         return view;
     }
 
@@ -57,22 +60,22 @@ public class AFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         mTextView = view.findViewById(R.id.tv_title);
         mBtnChange = view.findViewById(R.id.btn_change);
-        mBtnReset =view.findViewById(R.id.btn_rest);
+        mBtnReset = view.findViewById(R.id.btn_rest);
 //       给activity 传递消息
         mBtnMessage = view.findViewById(R.id.btn_message);
-        if(getArguments()!=null){
+        if (getArguments() != null) {
             mTextView.setText(getArguments().getString("title"));
         }
         mBtnChange.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(bFragment ==null){
+                if (bFragment == null) {
                     bFragment = new BFragment();
                 }
-              Fragment fragment =getFragmentManager().findFragmentByTag("a");
-                if(fragment!=null){
-                    getFragmentManager().beginTransaction().hide(fragment).add(R.id.fl_container,bFragment).addToBackStack(null).commitAllowingStateLoss();
-                }else{
+                Fragment fragment = getFragmentManager().findFragmentByTag("a");
+                if (fragment != null) {
+                    getFragmentManager().beginTransaction().hide(fragment).add(R.id.fl_container, bFragment).addToBackStack(null).commitAllowingStateLoss();
+                } else {
                     getFragmentManager().beginTransaction().replace(R.id.fl_container, bFragment)//
                             .addToBackStack(null)// 添加到回退栈
                             .commitAllowingStateLoss();
@@ -90,7 +93,7 @@ public class AFragment extends Fragment {
         mBtnMessage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((ContainerActivity)getActivity()).setData("贺壮壮");
+                ((ContainerActivity) getActivity()).setData("贺壮壮");
             }
         });
 
