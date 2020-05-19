@@ -6,17 +6,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
+
 
 import com.example.myapplication.animation.AnimationActivity;
-import com.example.myapplication.customerviewpager.CustomerViewPagerActivity;
 import com.example.myapplication.fragment.ContainerActivity;
+import com.example.myapplication.gaodemap.GaoDeMapActivity;
 import com.example.myapplication.jump.AActivity;
 import com.example.myapplication.listView.ListViewActivity;
 import com.example.myapplication.recycleView.RecycleViewActivity;
 import com.example.myapplication.viewpager.ViewPageActivity;
-import com.example.myapplication.viewpager.ViewPagerActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -56,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
 
     private Button listView;
 
+    private Button gaoDeMap;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
         animation = findViewById(R.id.btn_animation);
         viewPager = findViewById(R.id.btn_viewpager);
         listView = findViewById(R.id.btn_listview);
+        gaoDeMap =findViewById(R.id.btn_gaodemap);
         setListeners();
     }
 
@@ -102,6 +103,7 @@ public class MainActivity extends AppCompatActivity {
         animation.setOnClickListener(onClick);
         viewPager.setOnClickListener(onClick);
         listView.setOnClickListener(onClick);
+        gaoDeMap.setOnClickListener(onClick);
 
     }
 
@@ -165,6 +167,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_listview:
                     intent = new Intent(MainActivity.this, ListViewActivity.class);
+                    break;
+                case R.id.btn_gaodemap:
+                    intent = new Intent(MainActivity.this, GaoDeMapActivity.class);
                     break;
             }
             startActivity(intent);

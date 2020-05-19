@@ -1,14 +1,18 @@
 apply plugin: 'com.android.application'
-
+//com.taifua.androidlearnings
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.taifua.androidlearnings"
+        applicationId "com.example.myapplication"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            //设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）
+            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
+        }
     }
     buildTypes {
         release {
@@ -37,6 +41,13 @@ dependencies {
     implementation 'com.amap.api:location:latest.integration'
     //搜索功能
     implementation 'com.amap.api:search:latest.integration'
+
     implementation 'androidx.recyclerview:recyclerview:1.2.0-alpha03'
     implementation 'com.github.JakeWharton:ViewPagerIndicator:2.4.1'
+//下拉刷新开始
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-andx-11'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-andx-11'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    //下拉刷新结束
+
 }

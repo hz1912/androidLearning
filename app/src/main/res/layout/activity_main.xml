@@ -124,7 +124,12 @@
             android:layout_height="wrap_content"
             android:text="ListView(基本用法)"
             android:textAllCaps="false"></Button>
-
+        <Button
+            android:id="@+id/btn_gaodemap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="高德地图使用"
+            android:textAllCaps="false"></Button>
 
     </LinearLayout>
 

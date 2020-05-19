@@ -65,4 +65,7 @@ public class LinearAdapter extends RecyclerView.Adapter<LinearAdapter.LinearView
     public interface OnItemClickListener {
         void onClick(int pos);
     }
+
+
+
 }

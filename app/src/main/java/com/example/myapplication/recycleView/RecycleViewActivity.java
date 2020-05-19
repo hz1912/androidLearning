@@ -20,6 +20,8 @@ public class RecycleViewActivity extends AppCompatActivity {
 
     private Button mBtnPu;
 
+    private Button smartRefsh;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +31,8 @@ public class RecycleViewActivity extends AppCompatActivity {
         mBtnHor = findViewById(R.id.btn_hor);
         mBtnGrid = findViewById(R.id.btn_grid);
         mBtnPu = findViewById(R.id.btn_pu);
+
+        smartRefsh = findViewById(R.id.btn_SmartRefreshLayout);
 
         mBtnLinear.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,12 +55,18 @@ public class RecycleViewActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        mBtnPu.setOnClickListener(new View.OnClickListener()
-        {
+        mBtnPu.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view)
-            {
+            public void onClick(View view) {
                 Intent intent = new Intent(RecycleViewActivity.this, PuRecyclerViewActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        smartRefsh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RecycleViewActivity.this, SmartRefreshLayoutActivity .class);
                 startActivity(intent);
             }
         });

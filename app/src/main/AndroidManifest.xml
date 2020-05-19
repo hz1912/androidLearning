@@ -17,12 +17,14 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/learning"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        <activity android:name=".listView.phonebook.PhoneBookActivity"></activity>
+        <activity android:name=".recycleView.SmartRefreshLayoutActivity"></activity>
+        <activity android:name=".gaodemap.GaoDeMapActivity" />
+        <activity android:name=".listView.phonebook.PhoneBookActivity" />
         <activity android:name=".listView.ListViewActivity" />
         <activity android:name=".viewpager.viewltablayout.ViewPagerTabLayoutActivity" />
         <activity android:name=".viewpager.ViewPageActivity" />
@@ -64,7 +66,7 @@
 
         <meta-data
             android:name="com.amap.api.v2.apikey"
-            android:value="fc92a08646547431cf134359d1185a24" />
+            android:value="bc8d1953b9826f167a937fcebda87a7d" />
 
         <service android:name="com.amap.api.location.APSService" />
     </application>
