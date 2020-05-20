@@ -49,5 +49,11 @@ dependencies {
     implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-andx-11'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     //下拉刷新结束
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.google.code.gson:gson:2.7'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+//fastjson
+    implementation 'com.alibaba:fastjson:1.1.70.android'
 
 }

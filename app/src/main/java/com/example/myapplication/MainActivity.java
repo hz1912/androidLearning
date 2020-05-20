@@ -9,6 +9,7 @@ import android.widget.Button;
 
 
 import com.example.myapplication.animation.AnimationActivity;
+import com.example.myapplication.comment.CommentActivity;
 import com.example.myapplication.fragment.ContainerActivity;
 import com.example.myapplication.gaodemap.GaoDeMapActivity;
 import com.example.myapplication.jump.AActivity;
@@ -55,6 +56,8 @@ public class MainActivity extends AppCompatActivity {
     private Button listView;
 
     private Button gaoDeMap;
+
+    private Button commentbtn;
 
 
     @Override
@@ -169,7 +172,7 @@ public class MainActivity extends AppCompatActivity {
                     intent = new Intent(MainActivity.this, ListViewActivity.class);
                     break;
                 case R.id.btn_gaodemap:
-                    intent = new Intent(MainActivity.this, GaoDeMapActivity.class);
+                    intent = new Intent(MainActivity.this, CommentActivity.class);
                     break;
             }
             startActivity(intent);

@@ -22,7 +22,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        <activity android:name=".recycleView.SmartRefreshLayoutActivity"></activity>
+        <activity android:name=".comment.CommentActivity"></activity>
+        <activity android:name=".recycleView.SmartRefreshLayoutActivity" />
         <activity android:name=".gaodemap.GaoDeMapActivity" />
         <activity android:name=".listView.phonebook.PhoneBookActivity" />
         <activity android:name=".listView.ListViewActivity" />

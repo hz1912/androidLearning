@@ -63,6 +63,12 @@
             android:text="webview"></Button>
 
         <Button
+            android:id="@+id/btn_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="fragment"></Button>
+
+        <Button
             android:id="@+id/btn_toast"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -98,12 +104,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="跳转以及数据传递"></Button>
-
-        <Button
-            android:id="@+id/btn_fragment"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="fragment"></Button>
 
         <Button
             android:id="@+id/btn_animation"
