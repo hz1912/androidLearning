@@ -128,7 +128,7 @@
             android:id="@+id/btn_gaodemap"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="高德地图使用"
+            android:text="评论(回复)系统"
             android:textAllCaps="false"></Button>
 
     </LinearLayout>
